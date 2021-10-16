@@ -1,0 +1,127 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  
+}
+
+img {
+  overflow: hidden;
+}
+
+.order-heading {
+  display: block;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  /* padding: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.order-heading h1 {
+  font-weight: 900;
+}
+
+.order-heading p {
+  color: hsl(224, 23%, 55%);
+  margin: 0px 50px;
+  margin-bottom: 20px;
+}
+
+.price {
+  margin: 0px 50px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  display: flex;
+}
+
+.price img {
+  margin: 20px;
+}
+
+.plan-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 80px;
+}
+
+.plan-detail p {
+  margin: 3px;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-detail h4 {
+  margin: 0px;
+  font-weight: 900;
+}
+
+.change-link {
+  display: flex;
+  align-items: center;
+}
+.change-link a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.change-link :active {
+  color: hsl(245, 67%, 62%);
+}
+.payment-button {
+  margin: 40px 50px;
+  height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-weight: 900;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 20px 20px rgb(214, 214, 214);
+}
+.payment-button:active {
+  background-color: hsl(245, 67%, 62%);
+}
+.cancel-div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.cancel-div a {
+  text-decoration: none;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+.cancel-div a:active {
+  color: black;
+}
