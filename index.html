@@ -1,37 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      background-image: url("images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 100vw;
+      background-color: hsl(225, 100%, 94%);
+      font-family: 'Red Hat Display', sans-serif;
+    }
+
+    .maincontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+
+
+    }
+
+    .order-summary-img {}
+
+    img {
+      overflow: hidden;
+    }
+
+    .order-heading {
+      display: block;
+      text-align: center;
+
+    }
+
+    .container {
+      background-color: white;
+      /* padding: auto; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 450px;
+      margin: auto;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .order-heading h1 {
+      font-weight: 900;
+    }
+
+    .order-heading p {
+      color: hsl(224, 23%, 55%);
+      margin: 0px 50px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      margin: 0px 50px;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 20px;
+      display: flex;
+    }
+
+    .price img {
+      margin: 20px;
+    }
+
+    .plan-detail {
+      display: flex;
+      /* background-color: blue; */
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+      margin-right: 80px;
+    }
+
+    .plan-detail p {
+      margin: 3px;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .plan-detail h4 {
+      margin: 0px;
+      font-weight: 900;
+    }
+
+   .change-link{
+     display: flex;
+     align-items: center;
+   }
+  .change-link a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .change-link :active{
+    color: hsl(245, 67%, 62%);
+  }
+  .payment-button{
+    margin: 40px 50px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-weight: 900;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 20px 20px rgb(214, 214, 214);
+  }
+  .payment-button:active{
+    background-color: hsl(245, 67%, 62%);
+  }
+  .cancel-div{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .cancel-div a{
+    text-decoration: none;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+  }
+  .cancel-div a:active{
+    color: black;
+  }
   </style>
 </head>
+
 <body>
 
-  Order Summary
+  <div class="maincontainer">
+    <div class="container">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <div class="order-summary-img">
 
-  Annual Plan
-  $59.99/year
+        <img src="images/illustration-hero.svg" alt="">
 
-  Change
+      </div>
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="order-heading">
+        <h1>
+          Order Summary
+        </h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+      </div>
+
+
+      <div class="price">
+        <img src="images/icon-music.svg" alt="">
+        <div class="plan-detail">
+          <h4>
+            Annual Plan
+          </h4>
+          <p>
+            $59.99/year
+          <p>
+          </div>
+        <div class="change-link">
+          <a href="https://youtu.be/QtBDL8EiNZo">Change</a>
+        </div>
+      
+
+      </div>
+      <button class="payment-button">
+        Proceed to Payement
+      </button>
+      <div class="cancel-div">
+        <a href="https://youtu.be/QtBDL8EiNZo" class="cancel-order">Cancel Order</a>
+      </div>
+      
+
+    </div>
   </div>
+
 </body>
+
 </html>
