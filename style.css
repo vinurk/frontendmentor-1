@@ -46,6 +46,7 @@ img {
   margin: auto;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0px 20px 20px hsla(228, 71%, 81%, 0.377);
 }
 
 .order-heading h1 {
