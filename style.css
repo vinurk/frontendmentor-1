@@ -26,6 +26,9 @@ body {
   flex-direction: column;
   
 }
+.maincontainer h2{
+  font-weight: 900;
+}
 
 img {
   overflow: hidden;
